@@ -357,7 +357,7 @@ default['hopsworks']['jwt']['service_exp_leeway_sec']     = '172800000' # 2 days
 # EXPAT
 #
 
-default['hopsworks']['expat_url']                    = "#{node['download_url']}/expat/#{node['install']['version']}/expat-#{node['install']['version']}.tar.gz"
+default['hopsworks']['expat_url']                    = "#{node['download_url']}/maism/expat-#{node['install']['version']}.tar.gz"
 default['hopsworks']['expat_dir']                    = "#{node['install']['dir']}/expat-#{node['install']['version']}"
 
 #
