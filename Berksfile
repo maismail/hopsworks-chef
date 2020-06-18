@@ -4,7 +4,7 @@ source 'https://supermarket.chef.io'
 metadata
 
 cookbook 'conda', github: "logicalclocks/conda-chef", branch: "1.3"
-cookbook 'kagent', github: "logicalclocks/kagent-chef", branch: "1.3"
+cookbook 'kagent', github: "maismail/kagent-chef", branch: "HOPSWORKS-1871_1.3"
 cookbook 'hops', github: "logicalclocks/hops-hadoop-chef", branch: "1.3"
 cookbook 'ndb', github: "logicalclocks/ndb-chef", branch: "1.3"
 cookbook 'hadoop_spark', github: "logicalclocks/spark-chef", branch: "1.3"
@@ -16,7 +16,7 @@ cookbook 'tensorflow', github: "logicalclocks/tensorflow-chef", branch: "1.3"
 cookbook 'dela', github: "logicalclocks/dela-chef", branch: "1.3"
 cookbook 'kzookeeper', github: "logicalclocks/kzookeeper", branch: "1.3"
 cookbook 'kkafka', github: "logicalclocks/kafka-cookbook", branch: "1.3"
-cookbook 'elastic', github: "logicalclocks/elasticsearch-chef", branch: "1.3"
+cookbook 'elastic', github: "maismail/elasticsearch-chef", branch: "HOPSWORKS-1871_1.3"
 cookbook 'hopslog', github: "logicalclocks/hopslog-chef", branch: "1.3"
 cookbook 'hopsmonitor', github: "logicalclocks/hopsmonitor-chef", branch: "1.3"
 cookbook 'hops_airflow', github: "logicalclocks/airflow-chef", branch: "1.3"
