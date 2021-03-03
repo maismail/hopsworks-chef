@@ -22,7 +22,7 @@ cookbook 'hops_airflow', github: "logicalclocks/airflow-chef", branch: "2.1"
 cookbook 'hive2', github: "logicalclocks/hive-chef", branch: "2.1"
 cookbook 'consul', github: "logicalclocks/consul-chef", branch: "2.1"
 cookbook 'kube-hops', github: "logicalclocks/kube-hops-chef", branch: "2.1"
-cookbook 'cloud', github: "logicalclocks/cloud-chef", branch: "2.1"
+cookbook 'cloud', github: "maismail/cloud-chef", branch: "HOPSWORKS-CLOUD-1656_2.1"
 
 cookbook 'ulimit', github: "logicalclocks/chef-ulimit", branch: "2.1"
 cookbook 'glassfish', github: "logicalclocks/chef-glassfish", branch: "2.1"
