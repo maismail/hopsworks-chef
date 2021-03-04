@@ -3,9 +3,9 @@ source 'https://supermarket.chef.io'
 
 metadata
 
-cookbook 'conda', github: "maismail/conda-chef", branch: "HOPSWORKS-CLOUD-1656_2.1"
+cookbook 'conda', github: "logicalclocks/conda-chef", branch: "2.1"
 cookbook 'kagent', github: "logicalclocks/kagent-chef", branch: "2.1"
-cookbook 'hops', github: "logicalclocks/hops-hadoop-chef", branch: "2.1"
+cookbook 'hops', github: "maismail/hops-hadoop-chef", branch: "HOPSWORKS-CLOUD-1656_2.1"
 cookbook 'ndb', github: "logicalclocks/ndb-chef", branch: "2.1"
 cookbook 'hadoop_spark', github: "maismail/spark-chef", branch: "HOPSWORKS-CLOUD-1656_2.1"
 cookbook 'flink', github: "logicalclocks/flink-chef", branch: "2.1"
