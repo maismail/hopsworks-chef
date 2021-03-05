@@ -3,9 +3,9 @@ source 'https://supermarket.chef.io'
 
 metadata
 
-cookbook 'conda', github: "maismail/conda-chef", branch: "HOPSWORKS-CLOUD-1656"
+cookbook 'conda', github: "logicalclocks/conda-chef", branch: "master"
 cookbook 'kagent', github: "logicalclocks/kagent-chef", branch: "master"
-cookbook 'hops', github: "logicalclocks/hops-hadoop-chef", branch: "master"
+cookbook 'hops', github: "maismail/hops-hadoop-chef", branch: "HOPSWORKS-CLOUD-1656"
 cookbook 'ndb', github: "logicalclocks/ndb-chef", branch: "master"
 cookbook 'hadoop_spark', github: "maismail/spark-chef", branch: "HOPSWORKS-CLOUD-1656"
 cookbook 'flink', github: "logicalclocks/flink-chef", branch: "master"
@@ -22,7 +22,7 @@ cookbook 'hops_airflow', github: "logicalclocks/airflow-chef", branch: "master"
 cookbook 'hive2', github: "logicalclocks/hive-chef", branch: "master"
 cookbook 'consul', github: "logicalclocks/consul-chef", branch: "master"
 cookbook 'kube-hops', github: "logicalclocks/kube-hops-chef", branch: "master"
-cookbook 'cloud', github: "logicalclocks/cloud-chef", branch: "master"
+cookbook 'cloud', github: "maismail/cloud-chef", branch: "HOPSWORKS-CLOUD-1656"
 
 cookbook 'ulimit', github: "logicalclocks/chef-ulimit", branch: "master"
 cookbook 'glassfish', github: "logicalclocks/chef-glassfish", branch: "master"
