@@ -513,6 +513,7 @@ glassfish_asadmin "create-managed-executor-service --enabled=true --longrunningt
   not_if "#{asadmin} --user #{username} --passwordfile #{admin_pwd}  list-managed-executor-services | grep 'conda'"
 end
 
+glassfish_session_timeout = (node['hopsworks']['jwt']['lifetime_ms'].to_i / 1000).to_s 
 glassfish_conf = {
   'server-config.security-service.default-realm' => 'cauthRealm',
   # Jobs in Hopsworks use the Timer service
@@ -580,7 +581,9 @@ glassfish_conf = {
   'resources.jdbc-connection-pool.ejbTimerPool.property.Password' => node['hopsworks']['mysql']['password'],
   'resources.jdbc-connection-pool.ejbTimerPool.property.useSSL' => 'false',
   'resources.jdbc-connection-pool.ejbTimerPool.property.allowPublicKeyRetrieval' => 'true',
-  'server.network-config.protocols.protocol.https-internal.ssl.cert-nickname' => 'internal'
+  'server.network-config.protocols.protocol.https-internal.ssl.cert-nickname' => 'internal',
+  # session-timeout 
+  'configs.config.server-config.web-container.session-config.session-properties.timeout-in-seconds' => glassfish_session_timeout,
 }
 
 glassfish_conf.each do |property, value|
