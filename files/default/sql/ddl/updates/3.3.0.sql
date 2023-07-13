@@ -241,6 +241,6 @@ ALTER TABLE `hopsworks`.`git_executions` ADD COLUMN `hostname` VARCHAR(128) COLL
 
 -- FSTORE-857
 SET SQL_SAFE_UPDATES = 0;
-UPDATE hopsworks.jobs SET json_config=JSON_SET(json_config, '$.appPath', 'hdfs:///user/spark/hsfs-utils-3.3.0-RC0.jar') WHERE JSON_EXTRACT(json_config, '$.appPath') like '"hdfs:///user/spark/hsfs-utils-%.jar"';
-UPDATE hopsworks.jobs SET json_config=JSON_SET(json_config, '$.appPath', 'hdfs:///user/spark/hsfs_utils-3.3.0-RC0.py') WHERE JSON_EXTRACT(json_config, '$.appPath') like '"hdfs:///user/spark/hsfs_utils-%.py"';
+UPDATE hopsworks.jobs SET json_config=JSON_SET(json_config, '$.appPath', 'hdfs:///user/spark/hsfs-utils.jar') WHERE JSON_EXTRACT(json_config, '$.appPath') like '"hdfs:///user/spark/hsfs-utils-%.jar"';
+UPDATE hopsworks.jobs SET json_config=JSON_SET(json_config, '$.appPath', 'hdfs:///user/spark/hsfs_utils.py') WHERE JSON_EXTRACT(json_config, '$.appPath') like '"hdfs:///user/spark/hsfs_utils-%.py"';
 SET SQL_SAFE_UPDATES = 1;
